@@ -1,0 +1,135 @@
+
+
+/*----------------------------------- TO-DO -------------------------------------*/
+
+
+body{
+	background: #FEAC5E; 
+	background: -webkit-linear-gradient(to right, #C779D0, #FEAC5E);
+	background: linear-gradient(to right, #C779D0, #FEAC5E);
+	font-family: Roboto;
+}
+
+
+h1 {
+	background: #4BC0C8;
+	color: white;
+	margin: 0px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+#container {
+	border: 2px solid #4BC0C8;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+	width: 360px;
+	background: #f7f7f7;
+	margin: 50px auto;
+}
+
+span {
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0px;
+	display: inline-block;
+	transition: 0.2s linear;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	background: white;
+	height: 40px;
+	line-height: 40px;
+	color: #463737;
+}
+
+li:nth-child(2n) {
+	background: #f7f7f7;
+}
+
+
+input {
+	font-size: 18px;
+	background: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	color: #4BC0C8;
+	border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+	background: white;
+	border: 3px solid #4BC0C8;
+	outline: none;
+}
+
+.fa-plus {
+	float: right;
+}
+
+.completed {
+	color: #584B4B;
+	text-decoration: line-through;
+}
+
+
+/* 
+ -------------------------------------------------------------------------------
+ ------------------------------------CLOCK--------------------------------------
+ -------------------------------------------------------------------------------
+*/
+.clock {
+      width: 7rem;
+      height: 7rem;
+      border:4px solid white;
+      border-radius:10%;
+      margin-top: 20px;
+      margin-left: 575px;
+      padding:0.1rem;
+      box-shadow:
+        0 0 0 2px rgba(0,0,0,0.1),
+        inset 0 0 0 1.5px #EFEFEF,
+        inset 0 0 5px black,
+        0 0 5px rgba(0,0,0,0.2);
+    }
+
+    .clock-face {
+     
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px); /* account for the height of the clock hands */
+    }
+
+    .hand {
+      width:50%;
+      background:black;
+      position: absolute;
+      top:50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+     /* transition: all 0.05s;*/
+      /*transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);*/
+    }
+
+    .hour-hand {height: 5px; border-radius: 50%;}
+
+    .min-hand {height: 5px; border-radius: 50%;}
+
+    .second-hand {height: 3px; background-color: red; border-radius: 50%;}
